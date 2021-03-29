@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .header{
+            position:fixed; 
+            left: 0;
+            top: 0;
+            margin: 0;
+            background:white;
+            width: 100%;
+        }
+
+        .welcom{
+            display:inline-block; 
+            margin-left: 10px; 
+            vertical-align:middle;
+            border:1px solid black
+        }
+
+        .sidebar{
+            float:left; 
+            height: 100vh;
+            margin-left: 10px;
+            margin-right: 10px; 
+        }
+
+        .add{
+            float:right; 
+            height: 100vh;
+            margin-right: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color: white; left: 0; top:0">
+        <h1 class="header">Employment questionnaire</h1>
+        <h1 style="color:white;  margin: 0">pr</h1>
+    </header>
+
+    <nav class="sidebar">
+        <h3>Navigation</h3>
+        <ul>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+        </ul>
+    </nav>
+
+    <aside class="add">
+        <img src="./img/add.jpg" style="width: 150px; height: 100px;">
+    </aside>
+
+    <section class="welcom">
+        <article>
+            <h2>Welcome!</h2>
+            <p>Please, fill out this form.</p>
+        </article>
+    </section>
+    <form>
+        <p> Enter your name:
+            <input type="name" placeholder="Enter your name">
+        </p>
+        <p> Enter your date of birth:
+            <input type="date">
+        </p>
+        <p> Сhoose the color of your skin:
+            <input type="color">
+        </p>
+        <p>Enter your bank account details
+            <ul>
+                <li>Number of card:<input type="number" pattern="\d{4}+(\s\d{4})+(\s\d{4})+(\s\d{4})" checked></li>
+                <li>Validity:<input type="date"></li>
+                <li>CVV<input type="number"></li>
+            </ul>
+        </p>
+
+        <p>Enter contact number<input type="tel" pattern="\d{3}"></p>
+    
+        <p>Brief information about yourself
+            <textarea name="comment" cols="40" rows="3"></textarea></p>
+        </p>
+
+        <p>You have experience in this field:</p><p>
+            <input type="radio" name="answer" value="a1">Yes<Br>
+            <input type="radio" name="answer" value="a2">No<Br>
+            <input type="radio" name="answer" value="a3">Meybe</p>
+            <p><input type="submit">
+        </p>
+    </form>
+    <footer class="footer" style="position:fixed; left:0; bottom:0">
+        Copyright Company
+    </footer>
+</body>
+</html>
